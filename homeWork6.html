@@ -33,7 +33,9 @@
 
 var animal = $(this).data('animals');
         var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=dc6zaTOxFJmzC&limit=10";
+        var apiKey = 'dc6zaTOxFJmzC&limit=10';
 
+// Onclick event handler here
 $.ajax({url: queryURL,
 		method: 'GET' }).done(function(response){
 
@@ -43,6 +45,10 @@ $.ajax({url: queryURL,
 			console.log(response);
 		});
 
+
+$('.animalContainer').on('click', function(){
+
+}
 
 
 
