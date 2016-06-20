@@ -31,6 +31,11 @@
 
 <script type="text/javascript">
 
+$('.animalContainer').on('click', function(){
+	
+	
+
+
 var animal = $(this).data('animals');
         var queryURL = "http://api.giphy.com/v1/gifs/search?q=" + animal + "&api_key=dc6zaTOxFJmzC&limit=10";
         var apiKey = 'dc6zaTOxFJmzC&limit=10';
@@ -46,9 +51,7 @@ $.ajax({url: queryURL,
 		});
 
 
-$('.animalContainer').on('click', function(){
 
-}
 
 
 
@@ -74,6 +77,7 @@ Create a div to hold every gif that will be created
 Create a form with text box and "add animal button" to submit your request
 Some styling for div box needed
 Create an Ajax response and inspect(console.log) the result
+
 
 
 -->
