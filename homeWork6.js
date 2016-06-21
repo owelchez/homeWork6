@@ -1,27 +1,30 @@
-$('.animalContainer').on('click', function(){
+
+$('#animalForm').on('submit', function () {
+			var animalInput = $('#animalInput').val();
+			console.log('You\'re trying to search for: ', animalInput);
+			var animalDiv = $('<div>');
+			var pTag = $('<p>', {
+				text: animalInput,
+			})
+			return false;
+		});
+
+
+
 	
-	
+				
 
+	/*var animal = $(this).data('animal');	
+	var apiKey = 'dc6zaTOxFJmzC';
+	var queryURL = "http://api.giphy.com/v1/gifs/search?q=funny+cat&api_key=dc6zaTOxFJmzC";											
 
-			var animal = $(this).data('animals');
-			var queryURL = "http://api.giphy.com/v1/gifs/search?q=";
-			var apiKey = 'dc6zaTOxFJmzC';
+	$.ajax({
+		url: queryURL,
+		method: 'GET',
+	}).done(function(response){
 
-// Onclick event handler here
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+		console.log(response);
+	});*/
 
 
 
